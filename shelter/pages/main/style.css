@@ -1,0 +1,21 @@
+/***fonts***/
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('');
+}
+@font-face {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('');
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --color-primary: #F1CDB3;
+    --color-light-s: #FAFAFA; 
+    --color-dark-s: #CDCDCD;
+    --color-dark-3xl: #292929;
+}

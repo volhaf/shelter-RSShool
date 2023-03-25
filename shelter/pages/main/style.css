@@ -35,25 +35,28 @@ html {
 }
 
 body {
-    max-width: 1280px;
     margin: 0 auto;
     padding: 0;
 }
-.conteiner {
+.wrapper {
+    max-width: 1200px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.background {
-background: url(../../assets/images/start-screen-gradient-background.png);
-background-repeat: no-repeat;
 }
 
 
 
-/***header***/
+
+/***HEADER***/
 
 .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+
+}
+.header_conteiner {
     min-height: 60px;
     display: flex;
     flex-direction: row;
@@ -92,20 +95,22 @@ background-repeat: no-repeat;
 .navigation {
     min-width: 440px
 }
+
 .navigation-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-
+    gap:35px;
 }
+
 .nav-link {
     text-decoration: none;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 160%;
+    line-height: 24px;
     color: var(--color-dark-s);
     cursor: pointer;
 }
@@ -114,5 +119,67 @@ background-repeat: no-repeat;
 .nav-link:focus {
     color: var(--color-light-s);
     border-bottom: 3px solid var(--color-primary);
-    
+}
+
+/*** SECTION NOT ONLY ***/
+
+.not_only {
+    padding-top: 180px;
+    background-image: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), 
+    url(../../assets/images/start-screen-background.png);
+    background-size: 100%;
+}
+
+.not_only_conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 163px 40px 263px 0px;
+    gap:40px;
+}
+.content > h1 {
+    max-width: 310px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    color: var(--white-color);
+}
+ h1, p {
+    margin: 0;
+ }
+
+.content > p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-dark-s);
+}
+
+.not_only_btn {
+    width: 207px;
+    height: 52px;
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+}
+
+.start_screen_puppy {
+    max-width: 698px;
+    max-height: 728px;
 }

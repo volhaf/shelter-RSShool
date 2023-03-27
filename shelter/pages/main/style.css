@@ -246,8 +246,8 @@ a {
 }
 
 .our_friends_conteiner {
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 76px;
+    padding-bottom: 104px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -296,6 +296,11 @@ a {
     border: 2px solid var(--color-primary);
     background-color: var(--color-light-l);
     cursor: pointer;
+}
+
+.button_arrow > img {
+    width: 14px;
+    align-items: center;
 }
 
 .our_friends_card p {

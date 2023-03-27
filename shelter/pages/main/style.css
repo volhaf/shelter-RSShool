@@ -26,7 +26,7 @@
     --color-dark-3xl: #292929;
     --color-dark-l: #545454; 
     --color-dark-xl: #4C4C4C; 
-
+    --color-dark-m: #B2B2B2;
 }
 
 *, *::before, *::after {
@@ -46,7 +46,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h3, p {
+h1, h3,h4, h5, p {
     margin: 0;
  }
 
@@ -392,3 +392,79 @@ h1, h3, p {
     height: 60px;
 }
 
+/*** in_addition section ***/
+
+.in_addition {
+    background-color: var(--color-light-l);
+}
+
+.in_addition_conteiner {
+    padding: 80px 142px 100px 142px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in_addition_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+.in_addition_content > h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var (--color-dark-l);
+    
+}
+.in_addition_content > h5 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: var (--color-dark-l);
+    
+}
+.credit_card {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: var(--color-primary);
+    border-radius: 9px;
+    width: 350px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+}
+.credit_card img {
+    width: 30px;
+    height: 23px;
+    color: var(--color-dark-3xl);
+}
+.credit_card h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+} 
+
+.in_addition_content p {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-dark-m);
+}

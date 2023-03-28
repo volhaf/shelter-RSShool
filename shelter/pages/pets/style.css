@@ -229,7 +229,6 @@ a {
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
 }
-
 .button_paginator {
     display: flex;
     flex-direction: row;
@@ -248,6 +247,10 @@ a {
 .paginator_active {
     background-color: var(--color-primary);
 }
+.paginator:hover {
+    background-color: var(--color-primary);
+}
+
 /*** footer ***/
 
 .footer {

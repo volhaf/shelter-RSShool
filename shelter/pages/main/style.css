@@ -112,7 +112,7 @@ a {
     gap:35px;
 }
 
-.nav-link {
+.nav_link {
     text-decoration: none;
     font-family: 'Arial';
     font-style: normal;
@@ -121,6 +121,7 @@ a {
     line-height: 24px;
     color: var(--color-dark-s);
     cursor: pointer;
+    transition: .3s;
 }
 .active {
     border-bottom: 3px solid var(--color-primary);

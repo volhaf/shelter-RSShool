@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../../assets/fonts/arial/ArialMT.woff2) format('woff2'),
+        url(../../assets/fonts/arial/ArialMT.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(../../assets/fonts/georgia/Georgia.woff2) format('woff2'),
+        url(../../assets/fonts/georgia/Georgia.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --color-primary: #F1CDB3;
+    --color-light-s: #FAFAFA; 
+    --color-light-l:#F6F6F6;
+    --color-dark-s: #CDCDCD;
+    --color-dark-3xl: #292929;
+    --color-dark-l: #545454; 
+    --color-dark-xl: #4C4C4C; 
+    --color-dark-m: #B2B2B2;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h3,h4, h5, p {
+    margin: 0;
+ }
+a {
+    text-decoration: none;
+}
+
+
+/***header***/
+
+.header_conteiner {
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--color-dark-3xl);
+}
+
+.navigation {
+    min-width: 440px
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap:35px;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-dark-l);
+    cursor: pointer;
+    transition: .3s;
+}
+.active {
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-dark-xl);
+}
+.nav_link:hover {
+    color: var(--color-primary);
+}

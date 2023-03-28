@@ -177,29 +177,6 @@ a {
     color: var (--color-dark-l);
     text-align: center; 
 }
-
-.button_arrow {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border: 2px solid var(--color-primary);
-    background: transparent;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.button_arrow:hover {
-    border: 2px solid var(--color-primary);
-    background-color: var(--color-primary);
-    transition: 0.3s; 
-    transform: scale(1.1);
-}
-
-.button_arrow > img {
-    width: 14px;
-    align-items: center;
-}
-
 .our_friends_card p {
     font-family: 'Georgia';
     font-style: normal;
@@ -233,6 +210,45 @@ a {
     border: 2px solid var(--color-primary);
     transition: 0.3s;
     transform: scale(1.1);
+}
+
+.button_item {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+.button_paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 340px;
+    margin: auto;
+}
+
+.paginator_inactive {
+    color: var(--color-dark-s);
+    border: 2px solid var(--color-dark-s);
+    cursor: auto;
+}
+
+.paginator_active {
+    background-color: var(--color-primary);
+}
+.paginator:hover {
+    background-color: var(--color-primary);
 }
 
 /*** footer ***/

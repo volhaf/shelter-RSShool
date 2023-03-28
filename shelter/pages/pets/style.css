@@ -127,3 +127,118 @@ a {
 .nav_link:hover {
     color: var(--color-primary);
 }
+
+/*** our friends section***/
+
+.our_friends {
+    background-color: var(--color-light-l);
+}
+
+.our_friends_conteiner {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.our_friends_slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    row-gap: 32px;
+}
+
+/* .our_friends_pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+} */
+
+.our_friends_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--color-light-s);
+    transition: 0.3s;
+}
+
+.our_friends_card:hover {
+    box-shadow: 0 0 20px 0.5px var(--color-dark-m);
+    transition: 0.3s;
+}
+
+.our_friends_heading > h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var (--color-dark-l);
+    text-align: center; 
+}
+
+.button_arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button_arrow:hover {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    transition: 0.3s; 
+    transform: scale(1.1);
+}
+
+.button_arrow > img {
+    width: 14px;
+    align-items: center;
+}
+
+.our_friends_card p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.card_button {
+    width: 185px;
+    height: 50px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    background-color: var(--color-light-s);
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.card_button:hover {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: 0.3s;
+    transform: scale(1.1);
+}

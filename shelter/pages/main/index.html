@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main/style.css">
     <title>main</title>
+    <link rel="shortcut icon" type="image/svg" href="../../assets/icons/favicon.svg">
 </head>
 <body>
     <header class="header">
@@ -17,7 +18,7 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li><a href="#about_anchor" class="nav_link active">About the shelter</a></li>
-                    <li><a href="#Our_pets" class="nav_link">Our pets</a></li>
+                    <li><a href="../pets/index.html" class="nav_link">Our pets</a></li>
                     <li><a href="#help_anchor" class="nav_link">Help the shelter</a></li>
                     <li><a href="#contacts_anchor" class="nav_link">Contacts</a></li>
                 </ul>
@@ -33,7 +34,9 @@
                         and nice puppy with an extremely wide and open heart. 
                         He or she will love you more than anybody else in the world, 
                         you will see!</p>
-                    <button class="not_only_button">Make a friend</button>
+                    <form action="#our_friends">
+                        <button class="not_only_button">Make a friend</button>
+                    </form>
                 </div>
                 <div class="start_images">
                     <img src="../../assets/images/start.png" class="start_screen_puppy" alt="start-screen-puppy">
@@ -57,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="our_friends">
+        <section class="our_friends" id="our_friends">
             <div class="our_friends_conteiner wrapper">
                 <div class="our_friends_heading">
                     <h3>Our friends who<br>are looking for a house</h3>
@@ -87,7 +90,9 @@
                         <img src="../../assets/icons/Arrow2.png" alt="arrow">
                     </button>
                 </div>
-                <button class="our_friends_button">Get to know the rest</button>
+                <form action="../pets/index.html" target="_blank">
+                    <button class="our_friends_button">Get to know the rest</button>
+                </form>
             </div>
         </section>
         <section class="help" id="help_anchor">

@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../../assets/fonts/arial/ArialMT.woff2) format('woff2'),
+        url(../../assets/fonts/arial/ArialMT.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(../../assets/fonts/georgia/Georgia.woff2) format('woff2'),
+        url(../../assets/fonts/georgia/Georgia.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --color-primary: #F1CDB3;
+    --color-light-s: #FAFAFA; 
+    --color-light-l:#F6F6F6;
+    --color-dark-s: #CDCDCD;
+    --color-dark-3xl: #292929;
+    --color-dark-l: #545454; 
+    --color-dark-xl: #4C4C4C; 
+    --color-dark-m: #B2B2B2;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h3,h4, h5, p {
+    margin: 0;
+ }
+a {
+    text-decoration: none;
+}
+
+
+/***header***/
+
+.header_conteiner {
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--color-dark-3xl);
+}
+
+.navigation {
+    min-width: 440px
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap:35px;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-dark-l);
+    cursor: pointer;
+    transition: .3s;
+}
+.active {
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-dark-xl);
+}
+.nav_link:hover {
+    color: var(--color-primary);
+}
+
+/*** our friends section***/
+
+.our_friends {
+    background-color: var(--color-light-l);
+}
+
+.our_friends_conteiner {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.our_friends_slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    row-gap: 32px;
+}
+.our_friends_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--color-light-s);
+    transition: 0.3s;
+}
+
+.our_friends_card:hover {
+    box-shadow: 0 0 20px 0.5px var(--color-dark-m);
+    transition: 0.3s;
+}
+
+.our_friends_heading > h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var (--color-dark-l);
+    text-align: center; 
+}
+
+.button_arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button_arrow:hover {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    transition: 0.3s; 
+    transform: scale(1.1);
+}
+
+.button_arrow > img {
+    width: 14px;
+    align-items: center;
+}
+
+.our_friends_card p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.card_button {
+    width: 185px;
+    height: 50px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    background-color: var(--color-light-s);
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.card_button:hover {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/*** footer ***/
+
+.footer {
+    background-image: url(../../assets/images/footer-background.png), 
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-size: 100%;
+    max-height: 350px;
+    margin-top: 3px;
+}
+
+.footer_conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 15px;
+}
+.footer_location {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 15px;
+    
+}
+
+.footer_contacts h3, 
+.footer_location h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    width: 280px;
+}
+
+.footer_contacts_link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+.footer_contacts_link:hover {
+    transition: 0.3s; 
+    transform: scale(1.2);
+}
+
+.footer_contacts_link > h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+.footer_images img {
+    width: 300px;
+    height: 310px;
+}

@@ -379,12 +379,15 @@ a {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
-    margin: auto;
 }
 
 .our_friends_button:hover {
     transition: 0.3s; 
     transform: scale(1.1);
+}
+
+.our_friends_conteiner form {
+    margin: auto;
 }
 
 /*** help section***/

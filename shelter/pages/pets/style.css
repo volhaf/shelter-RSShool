@@ -120,11 +120,11 @@ a {
     cursor: pointer;
     transition: .3s;
 }
-.active {
+.line {
     border-bottom: 3px solid var(--color-primary);
     color: var(--color-dark-xl);
 }
-.nav_link:hover {
+.active:hover {
     color: var(--color-primary);
 }
 

@@ -52,7 +52,13 @@ h1, h3,h4, h5, p {
 a {
     text-decoration: none;
 }
+a:active {
+    color: var(--color-dark-m);
+}
 
+button:active {
+    background-color: var(--color-dark-m);
+}
 
 /***header***/
 
@@ -322,6 +328,10 @@ a {
     background-color: var(--color-primary);
     transition: 0.3s; 
     transform: scale(1.1);
+}
+.button_arrow:active {
+    border: 2px solid var(--color-dark-xl);
+    background-color: var(--color-dark-xl);
 }
 
 .button_arrow > img {

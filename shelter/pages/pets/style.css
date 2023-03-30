@@ -176,6 +176,11 @@ a {
     background-color: var(--white-color);
 }
 
+.our_friends_card:hover .card_button {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+  }
+
 .our_friends_heading > h1 {
     font-family: 'Georgia';
     font-style: normal;
@@ -215,6 +220,7 @@ a {
     transition: 1s; 
 }
 
+  
 .card_button:hover {
     transition: 1s; 
     transform: scale(1.1);
@@ -234,7 +240,6 @@ a {
     border-radius: 50%;
     border: 2px solid var(--color-primary);
     background: transparent;
-    cursor: pointer;
     transition: 0.3s;
 
     font-family: 'Georgia';
@@ -262,13 +267,16 @@ a {
 
 .paginator_active {
     background-color: var(--color-primary);
-    transition: 0.7s; 
+    transition: 0.7s;
+    cursor: pointer;
 }
 .paginator_active:hover {
     background-color: var(--color-primary-light);
     transition: 0.7s; 
 }
 .paginator {
+    transition: 0.7s; 
+    cursor: pointer;
     transition: 0.7s; 
 }
 .paginator:hover {

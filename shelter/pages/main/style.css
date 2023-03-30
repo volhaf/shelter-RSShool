@@ -20,6 +20,7 @@
 :root {
     --white-color: #FFFFFF;
     --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
     --color-light-s: #FAFAFA; 
     --color-light-l:#F6F6F6;
     --color-dark-s: #CDCDCD;
@@ -52,13 +53,6 @@ h1, h3,h4, h5, p {
 a {
     text-decoration: none;
 }
-/* a:active {
-    color: var(--color-dark-m);
-}
-
-button:active {
-    background-color: var(--color-dark-m);
-} */
 
 /***header***/
 
@@ -88,10 +82,6 @@ button:active {
     transition: 0.3s;
 }
 
-.logo:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-}
 .title {
     font-family: 'Georgia';
     font-style: normal;
@@ -198,14 +188,18 @@ button:active {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.06em;
+    transition: 1s; 
 }
 
 .not_only_button:hover {
-    transition: 0.3s;
+    transition: 1s;
     transform: scale(1.1);
+    background-color: var(--color-primary-light);
 }
+
 .not_only_button:active {
-    background-color: var(--color-dark-m);
+    background-color: var(--color-primary-light);
+    border: var(--color-primary);
 }
 
 
@@ -299,19 +293,25 @@ button:active {
     background-color: var(--color-light-s);
     transition: 0.3s;
     border-radius: 9px;
-    
 }
 
 .our_friends_card:hover {
-    box-shadow: 0 0 20px 0.5px var(--color-dark-m);
-    transition: 0.3s;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: 1s;
+    background-color: var(--white-color);
 }
 
 .our_friends_card:active {
-    box-shadow: 0 0 5px 2px var(--color-dark-s);
-    transition: 0.3s;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: 1s;
     background-color: var(--white-color);
 }
+
+.our_friends_card:hover .card_button {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+  }
+  
 
 .our_friends_heading > h3 {
     font-family: 'Georgia';
@@ -335,15 +335,16 @@ button:active {
 }
 
 .button_arrow:hover {
-    border: 2px solid var(--color-primary);
-    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
     transition: 0.3s; 
     transform: scale(1.1);
 }
 .button_arrow:active {
-    border: 2px solid var(--color-dark-xl);
-    background-color: var(--color-dark-xl);
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
 }
+
 
 .button_arrow > img {
     width: 14px;
@@ -376,19 +377,22 @@ button:active {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
+    transition: 1s; 
 }
 
 .card_button:hover {
-    background-color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    transition: 0.3s;
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    transition: 1s;
     transform: scale(1.1);
 }
 
 .card_button:active {
-    background-color: var(--color-dark-m);
-    border: 2px solid var(--color-dark-m);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary);
+    transition: 1s;
 }
+
 
 
 .our_friends_button {
@@ -405,14 +409,19 @@ button:active {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
+    transition: 1s; 
 }
 
 .our_friends_button:hover {
-    transition: 0.3s; 
+    transition: 1s; 
     transform: scale(1.1);
+    background-color: var(--color-primary-light);
+    border: none;
 }
 .our_friends_button:active {
-    background-color: var(--color-dark-m);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    transition: 1s; 
 }
 
 .our_friends_conteiner form {

@@ -19,6 +19,7 @@
 :root {
     --white-color: #FFFFFF;
     --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
     --color-light-s: #FAFAFA; 
     --color-light-l:#F6F6F6;
     --color-dark-s: #CDCDCD;
@@ -164,13 +165,14 @@ a {
 }
 
 .our_friends_card:hover {
-    box-shadow: 0 0 20px 0.5px var(--color-dark-m);
-    transition: 0.3s;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: 1s;
+    background-color: var(--white-color);
 }
 
 .our_friends_card:active {
-    box-shadow: 0 0 5px 2px var(--color-dark-s);
-    transition: 0.3s;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: 1s;
     background-color: var(--white-color);
 }
 
@@ -210,18 +212,20 @@ a {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
+    transition: 1s; 
 }
 
 .card_button:hover {
-    background-color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    transition: 0.3s;
+    transition: 1s; 
     transform: scale(1.1);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
 }
 
 .card_button:active {
-    background-color: var(--color-dark-m);
-    border: 2px solid var(--color-dark-m);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    transition: 1s; 
 }
 
 .button_item {
@@ -253,22 +257,27 @@ a {
 .paginator_inactive {
     color: var(--color-dark-s);
     border: 2px solid var(--color-dark-s);
-    cursor: auto;
+    cursor: disabled;
 }
 
 .paginator_active {
     background-color: var(--color-primary);
+    transition: 0.7s; 
 }
 .paginator_active:hover {
-    background-color: var(--color-dark-m);
+    background-color: var(--color-primary-light);
+    transition: 0.7s; 
 }
-
+.paginator {
+    transition: 0.7s; 
+}
 .paginator:hover {
-    background-color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    transition: 0.7s; 
 }
 .paginator:active {
-    background-color: var(--color-dark-m);
+    background-color: var(--color-primary-light);
 }
 
 /*** footer ***/

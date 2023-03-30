@@ -51,13 +51,6 @@ h1, h3,h4, h5, p {
 a {
     text-decoration: none;
 }
-a:active {
-    color: var(--color-dark-m);
-}
-
-button:active {
-    background-color: var(--color-dark-m);
-}
 
 /***header***/
 
@@ -132,7 +125,7 @@ button:active {
     cursor: default;
 }
 .active:hover {
-    color: var(--color-primary);
+    color: var(--color-dark-3xl);
 }
 
 /*** our friends section***/
@@ -167,11 +160,18 @@ button:active {
     align-items: center;
     background-color: var(--color-light-s);
     transition: 0.3s;
+    border-radius: 9px;
 }
 
 .our_friends_card:hover {
     box-shadow: 0 0 20px 0.5px var(--color-dark-m);
     transition: 0.3s;
+}
+
+.our_friends_card:active {
+    box-shadow: 0 0 5px 2px var(--color-dark-s);
+    transition: 0.3s;
+    background-color: var(--white-color);
 }
 
 .our_friends_heading > h1 {
@@ -219,6 +219,11 @@ button:active {
     transform: scale(1.1);
 }
 
+.card_button:active {
+    background-color: var(--color-dark-m);
+    border: 2px solid var(--color-dark-m);
+}
+
 .button_item {
     width: 52px;
     height: 52px;
@@ -254,8 +259,16 @@ button:active {
 .paginator_active {
     background-color: var(--color-primary);
 }
+.paginator_active:hover {
+    background-color: var(--color-dark-m);
+}
+
 .paginator:hover {
     background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+.paginator:active {
+    background-color: var(--color-dark-m);
 }
 
 /*** footer ***/

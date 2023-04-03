@@ -246,6 +246,7 @@ a {
 .about_pets_images {
     max-width:300px;
     max-height:408px;
+
 }
 
 .about_content {
@@ -669,7 +670,7 @@ a {
 
 /*.header, */
 /*.not_only,*/
-.about,
+/* .about, */
 .our_friends,
 .help,
 .in_addition,
@@ -696,6 +697,7 @@ a {
         padding-right: 30px;
     }
     
+    /*section not_only */
     .not_only {
         padding-top: 150px; 
     }
@@ -721,14 +723,18 @@ a {
         margin-left: 137px ;
         width: 569px;
         height: 592px;
-
     }
-  
-    
 
+    /*section about */
 
-
-
-
-    
+    .about_conteiner {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 80px;
+        padding: 68px 169px 100px 169px;
+    }
+    .about_pets_images {
+        margin: 0 auto;
+        display: block; 
+}
 }

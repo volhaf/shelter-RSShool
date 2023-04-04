@@ -746,20 +746,21 @@ a {
     .about_pets_images {
         margin: 0 auto;
         display: block; 
-}
+    }
 
 /*section our_friends */
 
-.card_three {
-    display: none;
-}
+    .card_three {
+        display: none;
+    }
 
-}.our_friends_card {
-    margin-top: 0px;
-}
-.our_friends_conteiner {
-    gap: 63px;
-}
-.our_friends_pets {
-    gap: 36px;
+    .our_friends_card {
+        margin-top: 0px;
+    }
+    .our_friends_conteiner {
+        gap: 63px;
+    }
+    .our_friends_pets {
+        gap: 36px;
+    }
 }

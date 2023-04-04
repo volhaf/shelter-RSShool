@@ -479,6 +479,7 @@ a {
     flex-wrap: wrap;
     gap: 55px 120px;
     justify-content: center;
+
 }
 .help_item {
     display: flex;
@@ -673,7 +674,7 @@ a {
 /*.not_only,*/
 /* .about, */
 /* .our_friends, */
-.help,
+/* .help, */
 .in_addition,
 .footer {
     display: none !important;
@@ -763,4 +764,15 @@ a {
     .our_friends_pets {
         gap: 36px;
     }
+
+/*section help */
+    .help_list { 
+        column-gap: 60px;
+    }
+    
+    .help_item {
+        width: 170px;
+    }
+
+
 }

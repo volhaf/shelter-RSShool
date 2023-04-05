@@ -286,7 +286,7 @@ a {
     font-weight: 400;
     font-size: 35px;
     line-height: 45px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     color: var(--color-dark-l);
 }
 .about_content p {
@@ -755,6 +755,13 @@ a {
 .our_friends_pets {
     gap: 35px;
 }
+/*section about */
+.about_conteiner {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 68px 169px 100px 169px;
+}
 
 
     /*** in_addition section ***/
@@ -814,17 +821,11 @@ a {
     .start_images {
         margin-left: 137px ;
         width: 569px;
-        /* height: 592px; */
+        height: 592px;
     }
 
     /*section about */
 
-    .about_conteiner {
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        gap: 80px;
-        padding: 68px 169px 100px 169px;
-    }
     .about_pets_images {
         margin: 0 auto;
         display: block; 
@@ -855,7 +856,7 @@ a {
 
     /*.header, */
 /* .not_only, */
-.about,
+/* .about, */
 .our_friends,
 .help,
 .in_addition,
@@ -887,7 +888,7 @@ a {
     .start_images {
         margin-left: 50px ;
         width: 260px;
-        height: 271px;
+        height: 272px;
     }
     .content {
         text-align: center;
@@ -901,4 +902,11 @@ a {
         margin: 0 auto;
     }
     
+
+    /*section about */
+    .about_conteiner {
+        gap: 42px;
+        padding: 42px 10px;
+    }
+
 }

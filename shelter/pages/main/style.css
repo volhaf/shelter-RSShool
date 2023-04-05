@@ -370,7 +370,7 @@ a {
     font-size: 35px;
     line-height: 45px;
     letter-spacing: 0.06em;
-    color: var (--color-dark-l);
+    color: var(--color-dark-l);
     text-align: center; 
 }
 
@@ -857,7 +857,7 @@ a {
     /*.header, */
 /* .not_only, */
 /* .about, */
-.our_friends,
+/* .our_friends, */
 .help,
 .in_addition,
 .footer {
@@ -902,11 +902,53 @@ a {
         margin: 0 auto;
     }
     
-
     /*section about */
     .about_conteiner {
         gap: 42px;
         padding: 42px 10px;
     }
 
+    /*section our_friends */
+    .card_two {
+        display: none;
+    }
+    .our_friends {
+        padding-left: 25px;
+        padding-right: 25px; 
+    }
+
+    .our_friends_pets {
+        order: -1;
+    }
+    .button_arrow {
+        order: 0;
+    }
+  .our_friends_slider {
+    flex-wrap: wrap;
+    gap:20px
+  }
+
+  .our_friends_conteiner {
+    gap: 42px; }
+
+
+  .our_friends_heading > h3 {
+    font-size: 25px;
+    line-height: 32px;
 }
+
+.button_arrow_one {
+margin-left: 42px;
+}
+.button_arrow_two {
+margin-right: 42px;
+}
+
+
+    }
+
+
+
+ 
+
+

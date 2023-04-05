@@ -781,7 +781,7 @@ a {
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
 
     .header {
         padding-left: 30px;
@@ -814,7 +814,7 @@ a {
     .start_images {
         margin-left: 137px ;
         width: 569px;
-        height: 592px;
+        /* height: 592px; */
     }
 
     /*section about */
@@ -854,7 +854,7 @@ a {
 @media all and (max-width: 755px) {
 
     /*.header, */
-.not_only,
+/* .not_only, */
 .about,
 .our_friends,
 .help,
@@ -877,4 +877,28 @@ a {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+ /*section not_only */
+
+.not_only {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .start_images {
+        margin-left: 50px ;
+        width: 260px;
+        height: 271px;
+    }
+    .content {
+        text-align: center;
+    }
+    .content > h1 {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+    }
+    .content > p {
+        margin: 0 auto;
+    }
+    
 }

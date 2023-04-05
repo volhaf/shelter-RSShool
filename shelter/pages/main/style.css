@@ -858,7 +858,7 @@ a {
 /* .not_only, */
 /* .about, */
 /* .our_friends, */
-.help,
+/* .help, */
 .in_addition,
 .footer {
     display: none !important;
@@ -943,9 +943,32 @@ margin-left: 42px;
 .button_arrow_two {
 margin-right: 42px;
 }
+.help_heading > h3 {
+font-size: 25px;
+line-height: 32px;
 
+ }
+ .help_conteiner {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    gap: 42px;
+}
+.help {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.help_list {
+    column-gap: 30px;
+} 
+.help_item {
+    width: 130px; 
+}
 
-    }
+.help_item p {
+    font-size: 15px;
+    line-height: 17px;
+}
+}
 
 
 

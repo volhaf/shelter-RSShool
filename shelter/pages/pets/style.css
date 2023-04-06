@@ -40,6 +40,8 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
+    scroll-behavior: smooth;
+    transition: all .3s;
 }
 .wrapper {
     max-width: 1200px;
@@ -64,6 +66,7 @@ a {
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    align-items: center;
 }
 
 .logo {
@@ -131,6 +134,29 @@ a {
     color: var(--color-dark-3xl);
 }
 
+.burger_menu {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    opacity: 1;
+    border: none;
+    background-color: transparent;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    display: none; 
+}
+
+.burger_line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: all 0.5s;
+    /* display: block; */
+    transition: all 0.3s ease-in-out;
+    display: none; 
+}
+
 /*** our friends section***/
 
 .our_friends {
@@ -154,6 +180,7 @@ a {
     gap: 40px;
     align-items: center;
     row-gap: 32px;
+    overflow-y: hidden;
 }
 .our_friends_card {
     display: flex;
@@ -190,7 +217,7 @@ a {
     font-size: 35px;
     line-height: 45px;
     letter-spacing: 0.06em;
-    color: var (--color-dark-l);
+    color: var(--color-dark-l);
     text-align: center; 
 }
 .our_friends_card p {
@@ -361,4 +388,82 @@ a {
 .footer_images img {
     width: 300px;
     height: 310px;
+}
+
+
+/*.header, */
+/* .our_friends, */
+.footer {
+    display: none !important;
+} 
+
+
+@media all and (max-width: 1279px) {
+
+    .header {
+           padding-left: 30px;
+           padding-right: 30px;
+       }
+}
+
+
+
+@media all and (max-width: 768px) {
+
+
+    .our_friends_slider {
+        justify-content: center;
+        gap: 30px;
+        column-gap: 40px;
+    }
+    .our_friends_conteiner {
+        padding: 60px 30px 70px 30px;
+        gap: 30px;
+    }
+
+   .button_paginator {
+    padding-top: 10px;
+   }
+
+}
+
+
+@media all and (max-width: 755px) { 
+    .navigation {
+        display: none;
+    }
+    .burger_menu {
+        display: flex;
+    }
+    .burger_line {
+        display: block;
+    }
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .our_friends_heading > h1 {
+        font-size: 25px;
+        line-height: 32px;}
+
+}
+
+@media all and (max-width: 400px) { 
+
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .button_paginator {
+        gap: 10px;
+        max-width: 300px;
+    }
+  .our_friends_card:nth-last-child(-n+5){
+    display: none;
+  }
+  .our_friends_conteiner {
+    padding: 42px 10px;
+}
 }

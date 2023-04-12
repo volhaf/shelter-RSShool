@@ -1,3 +1,5 @@
+alert ('реализовано только бургер-меню на двух страницах');
+
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
 
